@@ -1,0 +1,117 @@
+.a-button {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  border-radius: 4px;
+
+  &__primary {
+    background-color: green;
+    color: #fff;
+    font-weight: 600;
+    &:hover {
+      border-color: green;
+      background-color: transparent;
+      color: green;
+    }
+  }
+  &__secondary {
+    background-color: $thm-secondary;
+    color: #fff;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &_size {
+    &_full {
+      width: 100%;
+    }
+    &_sm {
+      padding: 6px 24px;
+    }
+
+    &_md {
+      padding: 10px 16px;
+    }
+
+    &_lg {
+      padding: 10px 30px;
+    }
+  }
+
+  &__white {
+    background-color: #f1f1f1;
+    color: $thm-black;
+    font-weight: 600;
+    display: block;
+
+    &:hover {
+      background-color: $thm-black;
+      color: #fff;
+    }
+  }
+
+  &_error {
+    border: 1px solid red;
+    color: red;
+    background-color: transparent;
+    line-height: 18px;
+
+    &:hover, &:active {
+      background: red;
+      color: red;
+    }
+  }
+
+  &__text {
+    color: $thm-black;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    padding: 0;
+
+    &:hover, &:active {
+      border-color: transparent;
+    }
+  }
+
+  &__white_outlined {
+    border-color: #9DA3AC;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+  &_primary_outlined {
+    border: 1px solid blue;
+    color: blue;
+    background-color: transparent;
+    line-height: 18px;
+
+    &:hover, &:active {
+      background: blue;
+      color: blue;
+    }
+  }
+
+  &__success {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    &:hover{
+      background-position: right;
+    }
+  }
+}
